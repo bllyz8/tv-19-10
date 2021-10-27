@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>exercício 5</title> 
+    <script language="javascript">
+         function calcularMedia()
+        {
+         var Valor1, Valor2, Valor3, Valor4, Soma, Media;
+           Valor1 = document.frmMedia.numV1.value;
+           Valor2 = document.frmMedia.numV2.value;
+           Valor3 = document.frmMedia.numV3.value;
+           Valor4 = document.frmMedia.numV4.value;
+           soma = Number(Valor1) + Number(Valor2) + Number(Valor3) + Number(Valor4);
+          Media = soma / 4;
+
+
+         document.getElementById("resultadoMedia").innerHTML = "<h1> A média aritmética entre os quatro valores é igual a "+ Media +".</;h1>";
+        }
+
+
+    </script>
+  </head>
+<body>
+  <style>
+    h1{
+       color: blue;
+       background-color: cornflowerblue;
+    }
+  </style>
+
+    <form name="frmMedia">
+      <h1>Digite o primeiro valor: <input type="number" name="numV1"><br></h1>
+      <h1>Digite o segundo valor: <input type="number" name="numV2"><br></h1>
+      <h1>Digite o terceiro valor: <input type="number" name="numV3"><br></h1>
+      <h1>Digite o quarto valor: <input type="number" name="numV4"><br><br></h1>
+      <h1> <input type="button" value="Calcular a média" onclick="calcularMedia();"></h1><br><br>
+      </form>
+      <p id="resultadoMedia"></p>
+  </body>
+</html>
